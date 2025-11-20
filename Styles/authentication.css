@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'DiamondCasino';
+    src: url('../Fonts/avenir-lt-pro-85-heavy.otf') format('opentype');
+}
+* {
+    font-family: 'DiamondCasino';
+    color: white;
+}
+body {
+    background: url(../Files/Background.png);
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    min-height: 100vh;       
+    margin: 0;
+    color: white;
+}
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+.backButton {
+    margin-right: auto;
+    font-size: 200%;
+}
+.hiddenButton {
+    margin-right: auto;
+    font-size: 200%;
+    visibility: hidden;
+}
+.main-container {
+    width: 90%;
+    max-width: 500px;
+    padding: 10px 30px 10px 30px;
+    margin: 10px 0px 10px 0px;
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 100px 5px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(50px);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-container h1, .inputContainerSubmit input, .main-container a{
+    text-shadow: 0px 0px 15px black;
+    text-decoration: none;
+}
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* inputs and labels classes */
+.inputContainer, .inputContainerButton {
+    width: 100%;
+    max-width: 425px;
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
+}
+.inputContainer label, .inputContainerButton label {
+    display: block; 
+    width: 100%;
+    font-size: 110%;
+    text-shadow: 0px 0px 15px #000000;
+}
+.inputContainer input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px white solid;
+    border-radius: 50px;
+}
+::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+.inputContainer p, .inputContainerButton p {
+    color: red;
+    text-shadow: 0px 0px 15px #000000;
+}
+/* inside button classes*/
+.insideButton {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 2px white solid;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.insideButton input {
+    flex-grow: 1; 
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.insideButton button {
+    height: 100%;
+    padding: 0 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.insideButton button img {
+    height: 1em;
+}
+/* submit button classes */
+
+.inputContainerSubmit {
+    width: 100%;
+    max-width: 425px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+.inputContainerSubmit input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 50px;
+    font-size: 125%;
+}
+
+/* hovers */
+.inputContainer input:focus{
+    outline: none;
+}
+.inputContainerSubmit input:hover {
+    background-color: rgba(255, 255, 255, 0.45);;
+}

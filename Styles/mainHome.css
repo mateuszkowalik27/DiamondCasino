@@ -1,0 +1,18 @@
+main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0px;
+}
+main div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+}
+main div img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}

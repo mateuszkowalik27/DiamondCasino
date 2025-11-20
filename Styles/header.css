@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'DiamondCasino';
+    src: url('../Fonts/avenir-lt-pro-85-heavy.otf') format('opentype');
+}
+* {
+    font-family: 'DiamondCasino';
+    color: white;
+}
+body {
+    background: url(../Files/Background.png);
+    display: flex;     
+    min-height: 100vh;       
+    margin: 0;
+    color: white;
+    flex-direction: column;
+}
+header {
+    display: flex;
+    width: 100%;
+    background-color: rgb(255, 255, 255, 0.1);
+    padding: 20px;
+}
+.home-icon {
+    display: inline-block;
+    padding: 0;
+    line-height: 0;
+}
+header img {
+    width: 325px;
+    display: block;
+}
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.loginButton a {
+    border: 2px white solid;
+    padding: 10px 35px 10px 35px;
+    font-size: 140%;
+    border-radius: 2rem 0 0 2rem;
+    border-right: none;
+    text-decoration: none;
+    color: white;
+}
+.registerButton a {
+    background-color: white;
+    border: 2px white solid;
+    padding: 10px 35px 10px 35px;
+    font-size: 140%;
+    border-radius: 2rem;
+    margin-left: -25px;
+    text-decoration: none;
+    color: black;
+}
+
+.loginButton a:hover {
+    border: 2px rgb(0, 95, 205) solid;
+    color: rgb(0, 95, 205);
+}
+.registerButton a:hover {
+    border: 2px rgb(0, 95, 205) solid;
+    background-color: rgb(0, 95, 205);
+    color: white;
+}
+.userContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.userContainer img {
+    height: 85px;
+    width: auto;
+}
+.userData {
+    text-align: right;
+    font-size: 80%;
+}
+.userData p, .userData a{
+    margin: 1px;
+    text-decoration: none;
+}
+.userData a{
+    color: white;
+}
+.userData a:hover {
+    color: rgb(0, 95, 205);
+}
+.item {
+    color: white;
+    display: inline-block; 
+    position: relative; 
+    padding-bottom: 1px;
+}
+.item::after {
+    content: "";
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+    height: 2px;
+    background-color: rgb(0, 95, 205);
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+.item:hover::after {
+    transform: scaleX(1);
+}
