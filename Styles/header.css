@@ -8,6 +8,7 @@
 }
 body {
     background: url(../Files/Background.png);
+    background-size: cover;
     display: flex;     
     min-height: 100vh;       
     margin: 0;
